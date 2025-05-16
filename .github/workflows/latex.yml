@@ -11,12 +11,13 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: resume.tex
-      - name: Commit PDF to repository
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add resume.pdf
-          git commit -m "Auto-update generated PDF" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+- name: Push generated PDF to repository
+  env:
+    TOKEN: ${{ secrets.ACTIONS_PAT }}
+  run: |
+    git config user.name "github-actions[bot]"
+    git config user.email "github-actions[bot]@users.noreply.github.com"
+    git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git
+    git add resume.pdf
+    git commit -m "Auto-update generated PDF"
+    git push origin HEAD:${{ github.ref_name }}
