@@ -15,7 +15,22 @@ jobs:
         with:
           name: PDF
           path: resume.pdf
+      - name: Create Git Tag
+        id: create_tag
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const tagName = `v${new Date().toISOString().split('T')[0]}`;
+            const { data: ref } = await github.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `refs/tags/${tagName}`,
+              sha: context.sha,
+            });
+            core.setOutput('tag_name', tagName);
       - name: Release
         uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.create_tag.outputs.tag_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
