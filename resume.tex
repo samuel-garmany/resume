@@ -1,0 +1,226 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Samuel Garmany} \\ \vspace{1pt}
+    \small (970) 208-7060 $|$ \href{mailto:samuel.garmany@colorado.edu}{\underline{samuel.garmany@colorado.edu}} $|$ Boulder, CO
+\end{center}
+
+%----------- Personal Profile -----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \resumeItem{Second-year student at CU Boulder with customer service experience}
+    \resumeItem{Flexible and independent with previous work and university experience}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Colorado Boulder}{Boulder, CO}
+      {B.A. in Molecular, Cellular \& Developmental Biology and B.S. in Computer Science}{Graduation Date: May 2027}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.86}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Colorado Mesa University}{Grand Junction, CO}
+      {Concurrent Enrollment \& Undeclared, Academic Affairs}{Aug. 2021 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.80}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Central High School}{Grand Junction, CO}
+      {High School Diploma}{Aug. 2020 -- May 2023}
+      \resumeItemListStart
+        \resumeItem{GPA: 4.50}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cook}{Pablo’s Pizza, Grand Junction, CO}
+      {}{June 2022 -- August 2023}
+      \resumeItemListStart
+        \resumeItem{Worked as a cook in a busy local pizza restaurant}
+        \resumeItem{Handled customer service, preparation, and cooking}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Volunteer}{Solidarity Not Charity, Grand Junction, CO}
+      {}{2022 -- 2024}
+      \resumeItemListStart
+        \resumeItem{Served food at monthly community homeless feeds}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Volunteer}{Mesa County Libraries, Grand Junction, CO}
+      {}{May 2021 -- August 2021}
+      \resumeItemListStart
+        \resumeItem{Worked with the summer reading program to excite young readers}
+        \resumeItem{Helped organize public literature as the role shifted}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Homeserver} $|$ \emph{Fedora IoT, Podman, Quadlets, WireGuard, and DNS Networking}}{}
+          \resumeItemListStart
+            \resumeItem{Architected a self-hosted infrastructure for DNS-level ad blocking, secure remote access, and private cloud using an immutable Fedora IoT base}
+            \resumeItem{Converted public Docker images for Nextcloud and Pi-hole services into rootless Podman containers, resolving SELinux and container network configuration challenges}
+            \resumeItem{Used Podman Quadlets to define systemd-integrated, declarative container services for reliable, auto-starting workloads}
+            \resumeItem{Configured a WireGuard VPN to enable secure access to internal services from outside the local network}
+            \resumeItem{Troubleshot DNS resolution issues involving systemd-resolved in conjunction with containerized and VPN-integrated services}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R, C++} \\
+%      \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+%      \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, MacOS, Linux, Windows} \\
+%      \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+%     }}
+%  \end{itemize}
+
+ \section{Honors and Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Engineering Honors Program}{: University of Colorado Boulder}\\
+     \textbf{High School Valedictorian}{: Central High School}
+     \textbf{}
+    }}
+ \end{itemize}
+ 
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Spanish - \textit{Beginner}, German - \textit{Intermediate}} \\
+     \textbf{Programming Languages}{: C/C++, Nix, Python, JavaScript, HTML/CSS, SQL (Postgres)} \\
+     \textbf{Outdoor Recreation}{: Completed 37 14ers as well as experience skiing and running in Colorado}
+    }}
+ \end{itemize}
+ 
+\end{document}
