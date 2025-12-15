@@ -2,7 +2,7 @@
 
 This repository hosts the LaTeX source code for my resume.
 
-## 🚀 View the Latest Version
+## 🦖 View the Latest Version
 **[Download the PDF here](https://samuel-garmany.github.io/resume/resume.pdf)**
 
 ---
