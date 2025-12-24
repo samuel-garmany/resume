@@ -1,5 +1,7 @@
 # Resume
 
+[![Deploy](https://github.com/samuel-garmany/resume/actions/workflows/deploy.yml/badge.svg)](https://github.com/samuel-garmany/resume/actions/workflows/deploy.yml)
+
 This repository hosts the LaTeX source code for my resume.
 
 ## 🦖 Latest Version
