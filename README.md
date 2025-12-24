@@ -44,6 +44,7 @@ git push origin main
 ```
 
 The GitHub Action will automatically:
+
 - Compile your LaTeX file to PDF
 - Deploy it to GitHub Pages
 
