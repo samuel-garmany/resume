@@ -100,9 +100,3 @@ All compiled PDFs will be deployed to GitHub Pages. Access them at:
 https://<your-username>.github.io/<repo-name>/resume.pdf
 https://<your-username>.github.io/<repo-name>/cover-letter.pdf
 ```
-
----
-
-## Requirements
-
-- LaTeX compilation and file hosting use Github-Hosted Runners and GitHub pages so you don't even need a local TeX install. Just bring a LaTeX file!
