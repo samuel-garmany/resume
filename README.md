@@ -4,15 +4,15 @@
 
 This repository hosts the LaTeX source code for my resume.
 
-## 🦖 View the Latest Version
+## View the Latest Version
 
 **[Resume PDF](https://samuel-garmany.github.io/resume/resume.pdf)**
 
-## ⚙️ How it works
+## How it works
 
 This project uses GitHub Actions to automatically compile the LaTeX source into a PDF and deploy it to GitHub Pages every time a change is pushed to the repository.
 
-## 🚀 Using this for your own resume (or other documents)
+## Using this for your own resume (or other documents)
 
 1. **Fork or clone this repository**
 
@@ -27,8 +27,6 @@ Or click **"Use this template"** on GitHub to create your own copy.
 
 Replace `resume.tex` with your own LaTeX resume (or whatever
  file you want to compile and host). The workflow expects `resume.tex` in the root directory.
-
-If your file has a different name, update `root_file` in `.github/workflows/deploy.yml`.
 
 3. **Enable GitHub Pages**
 
@@ -107,6 +105,4 @@ https://<your-username>.github.io/<repo-name>/cover-letter.pdf
 
 ## Requirements
 
-- GitHub account
-- LaTeX document (`.tex` file)
-- No local LaTeX installation required
+- LaTeX compilation and file hosting use Github-Hosted Runners and GitHub pages so you don't even need a local TeX install. Just bring a LaTeX file!
