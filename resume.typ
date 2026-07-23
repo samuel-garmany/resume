@@ -110,8 +110,8 @@
 == Technical Skills
 
 - *Laboratory & Field*: Aseptic technique, PCR, Gel Electrophoresis
-- *Computational Biology & Data*: Python, R (Tidyverse), SQL (Postgres), NumPy, Pandas, Matplotlib
-- *Research Workflows & DevOps*: Linux/Bash, Docker, Git/GitHub Actions, LaTeX
+- *Computational Biology & Data*: Python, R (Tidyverse), SQL (Postgres), NumPy, Pandas, Matplotlib, Jupyter
+- *Research Workflows & DevOps*: Linux/Bash, Docker, Anaconda, Git/GitHub Actions, LaTeX
 
 == Honors and Awards
 
