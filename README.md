@@ -2,7 +2,7 @@
 
 [![Deploy](https://github.com/samuel-garmany/resume/actions/workflows/deploy.yml/badge.svg)](https://github.com/samuel-garmany/resume/actions/workflows/deploy.yml)
 
-This repository hosts the LaTeX source code for my resume.
+This repository hosts the Typst source code for my resume. Built with [Typst](https://typst.app/) (an open-source typesetting system: [github.com/typst/typst](https://github.com/typst/typst)).
 
 ## View the Latest Version
 
@@ -10,7 +10,7 @@ This repository hosts the LaTeX source code for my resume.
 
 ## How it works
 
-This project uses GitHub Actions to automatically compile the LaTeX source into a PDF and deploy it to GitHub Pages every time a change is pushed to the repository.
+This project uses GitHub Actions to automatically compile the Typst source into a PDF and deploy it to GitHub Pages every time a change is pushed to the repository.
 
 ## Using this for your own resume (or other documents)
 
@@ -23,10 +23,10 @@ cd resume
 
 Or click **"Use this template"** on GitHub to create your own copy.
 
-2. **Replace the LaTeX source**
+2. **Replace the Typst source**
 
-Replace `resume.tex` with your own LaTeX resume (or whatever
- file you want to compile and host). The workflow expects `resume.tex` in the root directory.
+Replace the content in `resume.typ` with your own Typst resume (or whatever
+ file you want to compile and host). The workflow compiles `resume.typ` to `resume.pdf`.
 
 3. **Enable GitHub Pages**
 
@@ -43,7 +43,7 @@ git push origin main
 
 The GitHub Action will automatically:
 
-- Compile your LaTeX file to PDF
+- Compile your Typst file to PDF
 - Deploy it to GitHub Pages
 
 5. **Access Your Resume**
@@ -63,7 +63,7 @@ https://<your-username>.github.io/<repo-name>/resume.pdf
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml
-├── resume.tex
+├── resume.typ
 └── README.md
 ```
 
@@ -73,25 +73,22 @@ https://<your-username>.github.io/<repo-name>/resume.pdf
 
 ### Different filename
 
-Edit `.github/workflows/deploy.yml` and change:
+Edit `.github/workflows/deploy.yml` and change the compilation step:
 
 ```yaml
-root_file: resume.tex
+      - run: typst compile resume.typ resume.pdf
 ```
 
-to your filename.
+to your desired filenames and paths.
 
 ### Multiple documents
 
-You can compile multiple `.tex` files by modifying the `root_file` option to accept a list:
+You can compile multiple `.typ` files by modifying the `run` step:
 
 ```yaml
-- name: Compile LaTeX
-  uses: xu-cheng/latex-action@v3
-  with:
-    root_file: |
-      resume.tex
-      cover-letter.tex
+      - run: |
+          typst compile resume.typ resume.pdf
+          typst compile cover-letter.typ cover-letter.pdf
 ```
 
 All compiled PDFs will be deployed to GitHub Pages. Access them at:
