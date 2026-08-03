@@ -20,7 +20,7 @@
   // linkedin: linkedin,
   phone: phone,
   personal-site: personal-site,
-  accent-color: "#98971a",
+  accent-color: "#000000",
   font: "New Computer Modern",
   paper: "us-letter",
   author-position: left,
