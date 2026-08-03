@@ -1,0 +1,6 @@
+# compiled files
+**/*.pdf
+temp/
+
+# MacOS specific files
+.DS_Store
