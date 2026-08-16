@@ -4,7 +4,7 @@
 #let name = "Samuel Garmany"
 #let location = "Boulder, CO"
 #let email = "samuel.garmany@colorado.edu"
-// #let github = "github.com/stuxf"
+#let github = "github.com/samuel-garmany"
 // #let linkedin = "linkedin.com/in/stuxf"
 #let phone = "(970) 208-7060"
 #let personal-site = "garmany.me"
@@ -16,7 +16,7 @@
   // feel free to comment those lines out and they will not show.
   location: location,
   email: email,
-  // github: github,
+  github: github,
   // linkedin: linkedin,
   phone: phone,
   personal-site: personal-site,
@@ -46,7 +46,7 @@
   institution: "University of Colorado Boulder",
   location: "Boulder, CO",
   dates: "Expected May 2028",
-  degree: "Bachelor of Arts in Molecular, Cellular & Developmental Biology \n Bachelor of Arts in Computer Science",
+  degree: "Bachelor of Arts in Molecular, Cellular, and Developmental Biology\nBachelor of Arts in Computer Science",
 )
 - GPA: 3.95
 
@@ -71,8 +71,16 @@
   company: "Donaldson Lab, University of Colorado Boulder",
   dates: dates-helper(start-date: "Jan 2026", end-date: "Present"),
 )
-- Design and execute neurobiological experimentation to study social structures and pair bonding in prairie voles.
-- Developing Python and R-based modeling pipelines to explore and visualize large datasets generated from field experiments.
+- Design and execute neurobiological experiments studying social attachment and pair bonding in prairie voles.
+- Develop Python and R pipelines to model and visualize large datasets from field experiments.
+
+#work(
+  title: "Surgery Concierge",
+  location: "Boulder, CO",
+  company: "Boulder Community Health",
+  dates: dates-helper(start-date: "Aug 2026", end-date: "Present"),
+)
+- Guide patients and families through the surgical waiting area and relay updates from the care team.
 
 #work(
   title: "Engineering Ambassador",
@@ -81,15 +89,15 @@
   dates: dates-helper(start-date: "Aug 2025", end-date: "Present"),
 )
 - Support prospective students in understanding CU's engineering programs and resources.
-- Provide tours and represented the university at outreach events, strengthening communication and presentation skills.
+- Provide campus tours and represent the university at recruitment and outreach events.
 
 #work(
   title: "Cook",
   location: "Grand Junction, CO",
-  company: "Pablo's Pizza",
+  company: "Pablo’s Pizza",
   dates: dates-helper(start-date: "Jun 2022", end-date: "Aug 2023"),
 )
-- Collaborated with a team to prepare and serve high-volume orders and handled customer service.
+- Prepared and served high-volume orders in a fast-paced kitchen and handled customer service.
 
 #work(
   title: "Volunteer",
@@ -105,13 +113,13 @@
   company: "Mesa County Libraries",
   dates: dates-helper(start-date: "May 2021", end-date: "Aug 2021"),
 )
-- Worked with the summer reading program to engage young readers
+- Worked with the summer reading program to engage young readers.
 
 == Technical Skills
 
-- *Laboratory & Field*: Aseptic technique, PCR, Gel Electrophoresis
+- *Laboratory & Field*: Aseptic technique, PCR, gel electrophoresis
 - *Computational Biology & Data*: Python, R (Tidyverse), SQL (Postgres), NumPy, Pandas, Matplotlib, Jupyter
-- *Research Workflows & DevOps*: Linux/Bash, Docker, Anaconda, Git/GitHub Actions, LaTeX
+- *Research Workflows & DevOps*: Linux/Bash, Docker, Anaconda, Git/GitHub Actions, Typst/LaTeX
 
 == Honors and Awards
 
