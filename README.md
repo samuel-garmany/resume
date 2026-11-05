@@ -4,12 +4,12 @@
 
 This repository hosts the source code for my resume. Originally written in
 LaTeX, I converted it to [Typst](https://typst.app/), which is a similar
-typesetting tool with significantly fast build times and more modern
+typesetting tool with much faster build times and more modern
 syntax—similar to markdown.
 
 ## View the Latest Version
 
-**[Resume PDF](https://samuel-garmany.github.io/resume/resume.pdf)**
+**[Resume PDF](https://garmany.me/resume/resume.pdf)**
 
 ## How it works
 

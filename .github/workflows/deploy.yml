@@ -22,7 +22,6 @@ jobs:
       - uses: typst-community/setup-typst@v5
         #with:
         #  typst-version: '0.15.1'
-      # 🎉 Now Typst is installed!
       - run: typst compile resume.typ resume.pdf
 
       - name: Upload artifact

@@ -1,23 +1,17 @@
 #import "@preview/basic-resume:0.2.9": *
 
-// Put your personal information here, replacing mine
 #let name = "Samuel Garmany"
 #let location = "Boulder, CO"
 #let email = "samuel.garmany@colorado.edu"
 #let github = "github.com/samuel-garmany"
-// #let linkedin = "linkedin.com/in/stuxf"
 #let phone = "(970) 208-7060"
 #let personal-site = "garmany.me"
 
 #show: resume.with(
   author: name,
-  // All the lines below are optional.
-  // For example, if you want to to hide your phone number:
-  // feel free to comment those lines out and they will not show.
   location: location,
   email: email,
   github: github,
-  // linkedin: linkedin,
   phone: phone,
   personal-site: personal-site,
   accent-color: "#000000",
@@ -27,19 +21,6 @@
   personal-info-position: left,
 )
 
-/*
-* Lines that start with == are formatted into section headings
-* You can use the specific formatting functions if needed
-* The following formatting functions are listed below
-* #edu(dates: "", degree: "", gpa: "", institution: "", location: "", consistent: false)
-* #work(company: "", dates: "", location: "", title: "")
-* #project(dates: "", name: "", role: "", url: "")
-* certificates(name: "", issuer: "", url: "", date: "")
-* #extracurriculars(activity: "", dates: "")
-* There are also the following generic functions that don't apply any formatting
-* #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
-* #generic-one-by-two(left: "", right: "")
-*/
 == Education
 
 #edu(
@@ -53,15 +34,15 @@
 #edu(
   institution: "Colorado Mesa University",
   location: "Grand Junction, CO",
-  dates: dates-helper(start-date: "Sep 2021", end-date: "May 2024"),
-  degree: "Concurrent Enrollment & Undeclared",
+  dates: dates-helper(start-date: "Aug 2021", end-date: "May 2024"),
+  degree: "Concurrent Enrollment",
 )
 - GPA: 3.80
 
 == Relevant Coursework
 
 - *Biology*: Principles of Genetics, Molecular Biology, Cell Biology Lab
-- *Computer Science*: Data Structures, Algorithms, Software Development Methods, Discrete Structures
+- *Computer Science*: Data Structures, Computer Systems, Algorithms, Programming Languages, Database Systems
 
 == Experience
 
@@ -71,7 +52,8 @@
   company: "Donaldson Lab, University of Colorado Boulder",
   dates: dates-helper(start-date: "Jan 2026", end-date: "Present"),
 )
-- Design and execute neurobiological experiments studying social attachment and pair bonding in prairie voles.
+- Design and run experiments on pair bonding in prairie voles, focusing on dopamine in the nucleus accumbens.
+- Perform surgeries on prairie voles and program the FED3 feeding devices (Arduino) that run experiments.
 - Develop Python and R pipelines to model and visualize large datasets from field experiments.
 
 #work(
@@ -85,11 +67,11 @@
 #work(
   title: "Engineering Ambassador",
   location: "Boulder, CO",
-  company: "University of Colorado Boulder",
+  company: "College of Engineering and Applied Science, University of Colorado Boulder",
   dates: dates-helper(start-date: "Aug 2025", end-date: "Present"),
 )
-- Support prospective students in understanding CU's engineering programs and resources.
-- Provide campus tours and represent the university at recruitment and outreach events.
+- Help prospective students understand CU's engineering programs.
+- Give campus tours and represent the college at recruitment and outreach events.
 
 #work(
   title: "Cook",
@@ -97,7 +79,7 @@
   company: "Pablo’s Pizza",
   dates: dates-helper(start-date: "Jun 2022", end-date: "Aug 2023"),
 )
-- Prepared and served high-volume orders in a fast-paced kitchen and handled customer service.
+- Prepared and served high-volume orders and handled customer service.
 
 #work(
   title: "Volunteer",
@@ -105,7 +87,7 @@
   company: "Solidarity Not Charity",
   dates: dates-helper(start-date: "2022", end-date: "2024"),
 )
-- Assisted with monthly community meal services.
+- Helped serve monthly community meals.
 
 #work(
   title: "Volunteer",
@@ -113,16 +95,17 @@
   company: "Mesa County Libraries",
   dates: dates-helper(start-date: "May 2021", end-date: "Aug 2021"),
 )
-- Worked with the summer reading program to engage young readers.
+- Helped run the summer reading program for young readers.
 
 == Technical Skills
 
-- *Laboratory & Field*: Aseptic technique, PCR, gel electrophoresis
-- *Computational Biology & Data*: Python, R (Tidyverse), SQL (Postgres), NumPy, Pandas, Matplotlib, Jupyter
-- *Research Workflows & DevOps*: Linux/Bash, Docker, Anaconda, Git/GitHub Actions, Typst/LaTeX
+- *Lab*: Rodent surgery, PCR, gel electrophoresis, aseptic technique
+- *Programming*: Python (NumPy, pandas, Matplotlib), R (tidyverse), SQL, Arduino (FED3)
+- *Tools*: Linux, Git, Docker, LaTeX, Typst
 
 == Honors and Awards
 
+- *Dean's List*: Spring 2025, Fall 2025, Spring 2026
 - *Engineering Honors Program*: University of Colorado Boulder
-- *Tau Beta Pi*: University of Colorado Boulder
+- *Tau Beta Pi*: Engineering honor society
 
